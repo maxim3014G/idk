@@ -1,0 +1,198 @@
+
+html {
+    font-size: 20px;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+
+.bg2 {
+    color: white;
+    background-image: url(../img/bg2.png);
+    height: 700px;
+}
+
+
+.fs_h {
+    text-align: center;  
+    color: white;
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+.fs_mh {
+    font-size: 2.8rem;
+}
+
+.sticky {
+    background-color: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    z-index: 9;
+}
+
+.astra a {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.first_list {
+    background: url("../img/221.png") no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;     
+}
+
+
+.all_nav {
+    background-color: white;   
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(124, 122, 122);
+}
+
+.menu {
+    font-size: 1.15rem;
+}
+
+.line {
+    border-bottom: 2px solid rgb(97, 94, 94);
+    width: 50%;
+}
+
+.main_h h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.text {
+    font-size: 1.15rem;
+    text-indent: 40px;
+}
+
+.text p {
+    font-size: 1.15rem;
+    text-indent: 40px;
+
+}
+
+
+.card {
+    height: 100%;
+    min-height: 430px;
+    max-width: 400px;
+    max-height: 600px;
+    
+}
+
+
+.card img {
+    min-width: 10vw;
+    min-height: 225px;
+
+}
+
+.text_card h1 {
+    font-size: 1.05rem;
+}
+
+.text_card p {
+    font-size: 0.8rem;
+}
+
+.text_button button {
+    font-size: 0.85rem;
+    border: 1px solid rgb(177, 171, 171);
+}
+
+.ico-s {
+    width: 60px;
+}
+
+.ico-s img {
+    height: 50px;
+}
+.footer {
+    font-size: 0.9rem;
+    
+}
+
+
+@media screen and ((min-width: 0px) and (max-width: 576px)) {
+    html {
+        font-size: 13.5px;
+    }
+    .ico-s img {
+        height: 30px;
+    }
+    .ico-s {
+        width: 40px;
+    }
+
+
+}
+
+@media screen and ((min-width: 576px) and (max-width: 768px)) {
+    html {
+        font-size: 14px;
+    } 
+    .text, .text p {
+        font-size: 0.78rem;
+    }
+    .ico-s img {
+        height: 40px;
+    }
+    .ico-s {
+        width: 50px;
+    }
+}
+
+@media screen and ((min-width: 768px) and (max-width: 992px)) {
+    html {
+        font-size: 16px;
+    } 
+    .text, .text p {
+        font-size: 0.85rem;
+    }
+    .ico-s img {
+        height: 40px;
+    }
+    .ico-s {
+        width: 50px;
+    }
+
+}
+
+@media screen and ((min-width: 992px) and (max-width: 1200px)) {
+    .text p, .text {
+        font-size: 0.9rem;
+    }
+    
+
+}
+
+
