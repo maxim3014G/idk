@@ -3,371 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity= "sha384EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/ico_main.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <title>Eko-tur</title>
+    <title>Valentine'S Day</title>
 </head>
 <body>
-<section class="first_list">
-  <div class="col-7 col.offset-3 align-content-center mx-auto" style="height: 93%;">
-    
-    <h1 class="fs_h fs_mh"><b>Экскурсии и путешествия</b></h1>
-    <br>
-    <h2 class="col-xxl-6 col-md-8 col-sm-9 mx-auto fs_h">Город в России, столица Чувашской Республики, речной порт на правом берегу реки Волги, при впадении в неё реки Чебоксарки или Жемчужина России - <b>Чебокcары.</b></h2>
-      
-  </div>
+    <div class="center-wrapper">      
+        <div id="section-start" class="section">
+            <button id="start-button" class="start-button-text">26.11.25</button>     
+        </div> 
 
-  <div class="astra" style="width: 100%;">
-    <a href="#nav-item" class="">
-      <img src="img/arrow-b.png" alt="" style="width: 70px; height: 60px; filter: brightness(50%);">
-    </a>
-  </div>
-
-</section>
-<nav class="navbar navbar-expand-sm navbar-light bg-light menu sticky" id="nav-item">
-  <div class="container" id="navv">
-    <img src="img/LOGO.png" alt="" style="height: 1.12rem;">
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">  
-      <ul class="navbar-nav ms-auto my-0.25  align-middle">
-        <li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Services">Услуги</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#info">О нас</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Контакты</a>
-        </li>        
-      </ul>
-    </div>
-  </div>
-</nav>
-<section>
-  <div class="row main_h mt-3">
-    <h1 id="Services">Экскурсии по Чебокcарам</h1>
-  </div>
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4 mx-auto">
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/heart_city.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <div class="card-body text_card">
-              <h1>Обзорная экскурсия<br> «Сердце города»</h1>
-              <p class="card-text">Вдумчивая прогулка по самому центру Чебоксар. Купеческие дома, величественные храмы, старые улочки и мерное дыхание истории. А еще — невероятная набережная Волги.
-                <br>
-                Место сбора: Бульвар Купца Ефремова</p>
-              <div class="d-flex justify-content-between align-content-end">
-                <div class="btn-group text_button">
-                  <a href="https://visitvolga.ru/tours/tour-heart-of-the-city/"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
+        <div id="section-image" class="section hidden">          
+            <div class="image-placeholder" id="dynamicImage">
+                <img src="img/peach-and-goma-hugging.gif" alt="" style="
+                    width: 200px;
+                    border-radius: 15px; ">
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/city.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <div class="card-body text_card">
-              <h1>Автомобильная экскурсия<br> «Чебоксары в веках»</h1>
-              <p class="card-text">Вы увидите все знаковые места города и сможете перенестись то в XX век, то в IX век, то в наше время. Между точками маршрута вас будет возить машина. По факту — современная машина комфорт-класса, по ощущениям — почти машина времени.
-                <br>Место сбора: Речной порт
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text_button">
-                  <a href="https://visitvolga.ru/tours/bus-tour-pearl-in-necklace-of-volga/"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
+            <div class="">
+                <p>Золото, тут сообщение пришло, глянем?</p>
+            </div>            
+            <div class="button-group">
+                <button id="btn-yes">Да</button>
+                <button id="btn-no">Нет</button>
             </div>
-          </div>
+        </div>
+        
+        <div id="section-letter" class="section hidden"> 
+            <button id="letterbtn">
+                <img src="img/letter.png" style="height: 350px;" alt="">
+            </button>      
+        </div>     
+
+        <div id="section-video" class="section hidden">
+            <div class="cont">
+               
+                <p style="margin-top: 10px;">
+                    Солнце, уже как ~18 лет я жил с пониманием того, что этот праздник будет обходить меня стороной и я не буду его праздновать, но вот 2025 год, 26 ноября, два человека, которые знали друг друга уже достаточно большое количество времени и откровенный разговор...
+                    <br>
+                </p>
+                <p>
+                    Все те-же два человека, сидят в машине и часами разговаривают на разные темы, их разговоры переходят из одной темы в другую, казалось бы, все обсудили, но их разговоры словно лечат друг друга, слова сами лезут на язык. Вообще событие, которое привело к их решению в ту ночь, можно назвать как <b>«объявленный конец, который стал началом чего-то нового»</b>. Один звонок, который перевернул привычный ход жизни обоих, как раз таки и привел их к тому разговору.
+                    <br>
+                </p>                
+                <p>
+                    И вот возвращаемся в настоящее, уже прошло два месяца, потихоньку подходит третий. И ты представить не можешь, насколько сильно моя жизнь поменялась в хорошую сторону золото. Я не просто так обратился к моменту того, как мы официально стали парой. Для меня этот момент по сей день очень дорог. Каждый раз, когда я его вспоминаю мне становится очень тепло на душе и я словно переживаю эти чувства по новой. Спасибо за то, что ты есть золото, ведь если бы не тот звонок, то боюсь представить, насколько сильно жизнь сейчас, отличалась от той, которая могла быть. Я рад за то, что могу провести время в этот праздник вместе с тобой золото, спасибо тебе большое, я очень сильно тебя люблю💜
+                </p>
+            </div>     
+             <div class="row justify-content-center">                    
+                <img src="img/cat-cute.gif" class="imga" alt="" style="margin-top: -10px;">               
+            </div>             
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/Big-Mather.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">  
-            <div class="card-body text_card">
-              <h1>Иммерсивная экскурсия<br> «Нити судьбы»</h1>
-              <p class="card-text">Поверх одежды — плащ, вместо экскурсовода — наушники, из которых льются голоса известных актеров. Есть только вы и город. Это театр, променад, спектакль — что угодно, но не просто экскурсия.
-              <br>Место сбора: возле Центра современного искусства (Президентский бульвар, 1/15)</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text_button">
-                  <a href="https://visitvolga.ru/tours/immersive-tour-of-threads-of-fate/"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/Ship.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <div class="card-body text_card">
-              <h1>Экскурсия на пограничный<br> сторожевой корабль «Чебоксары»</h1>
-              <p class="card-text">Прогуляйтесь по палубе, посетите каюты и узнайте об особенностях военного судна, названного в честь столицы Чувашии.
-              <br>
-              <br>Место сбора: Речной порт
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text_button">
-                  <a href="https://chebtour.com/riverport"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/Theatre.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <div class="card-body text_card">
-              <h1>Путешествие в этнокультурный мир Чувашии:<br> "театральное закулисье"<br></h1>
-              <p class="card-text">Обзорная пешеходная экскурсия с посещением Чувашского государственного академического драматического театра им. К.В. Иванова
-                <br>
-                Место сбора: Красная площадь
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text_button">
-                  <a href="https://chebtour.com/chuvteatr"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm mx-auto">
-            <img class="bd-placeholder-img card-img-top" src="img/WinersPark.jpg" width="100%" height="225" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <div class="card-body text_card">
-              <h1>Чебоксары в тяжелые годы<br>Великой Отечественной <br>войны</h1>
-              <p class="card-text">Вместе с экскурсоводом прогуляетесь по Парку Победы, узнаете, как жил город во время войны и после нее, услышите имена героев и даже увидите их в лицо.
-                <br>Место сбора: аллея Героев<br>
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group text_button">
-                  <a href="https://visitvolga.ru/tours/cheboksary-during-the-great-patriotic-war-online-tour/"><button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>   
-      </div>
+        
     </div>
-  </div>  
-</section>
 
-<section>
-  <div class="row main_h">
-    <h1>Объекты культурного наследия Чувашии</h1>
-  </div>
-  <div class="row justify-content-center">
-    <div class="row text col-sm-5 col-xll-5 col-11 align-items-center p-4 justify-content-center">
-      <h1><b>Национальный парк «Чаваш Вармане»</b></h1>
-      <p class="text">
-        Национальный парк был основан в 1993-м на территории Шемуршинского района. Он занимает площадь в 250 км2. Парк гордится наличием большого числа биоценозов: представлены хвойные и лиственные леса, боры, болота, лесостепи. Число видов растений – более 800, из них 57 включено в Красную книгу. В национальном парке есть исторические достопримечательности. В их числе – старинный рудник и суконная фабрика. Посещать можно лишь определенные зоны парка.
-    </div>
-    <div class="p-5 col-xxl-4 col-sm-6 col-11 align-content-center" style="max-width: 100%;">
-      <img src="img/ParkChavash.jpg" alt="" class="shadow" style="width: 100%; border-radius: 9px;">
-    </div>
-  </div>
-
-  <div class="row line mx-auto"><img src="img/LOGO_line.png" alt="" style="height: 1.7rem; width: 3.4rem;" class="mx-auto"></div>
-
-
-  <div class="row justify-content-center">
-    <div class="p-5 col-xxl-4 col-sm-6 col-11 align-content-center" style="max-width: 100%;">
-      <img src="img/park2.jpg" alt="" class="shadow" style="width: 100%; border-radius: 9px;">
-    </div>
-    <div class="row text col-sm-5 col-xll-5 col-11 align-items-center p-4 justify-content-center">
-      <h1><b>Этнографический музей под открытым небом</b></h1>
-      <p>Открыт он в 1980-м. Основу экспозиции составляют памятники национального зодчества Чувашии: избы, мельницы, амбары, колодцы и другие постройки. В этнографическом зале гости увидят предметы быта и орудия труда, чувашские традиционные наряды, детали интерьеров.На территории этнографического музея действует картинная галерея, где представлены лучшие живописцы республики.
-        В музее проходят праздники, гуляния, творческие встречи и мастер-классы.
-        </p>
-    </div>
-  </div>
-
-  <div class="row mx-auto" style="border-top: 2px solid rgb(97, 94, 94); width: 50%;"><img src="img/LOGO_line.png" alt="" style="height: 1.7rem; width: 3.4rem;transform: scale(-1,-1);" class="mx-auto"></div>
-
-  <div class="row justify-content-center">
-      <div class="row text col-sm-5 col-xll-5 col-11 align-items-center p-1 p-ms-4 p-xl-4 justify-content-center">
-        <h1><b>Мокринский железнодорожный мост</b></h1>
-        <p>
-          Арочный железнодорожный мост проходит над рекой Уткой рядом с деревней Мокры. Длина сооружения – 370 м, Ширина – 4 м, а в высоту он достигает 34 м. Неудивительно, что он включен в список объектов культурного наследия Чувашии. Заложили мост в 1913-м. Мост перестал функционировать в 1986-м. Сейчас достопримечательность особенно популярна у роуд-джамперов. Под мостом находится источник с купелью и часовней.     
-        </p>
-      </div>
-      <div class="p-5 col-xxl-4 col-sm-6 col-11 align-content-centexl-r" style="max-width: 100%;">
-        <img src="img/bridge.png" alt="" class="shadow" style="width: 100%; border-radius: 9px;">
-      </div>
-    </div>  
-  </div>
-</section>
-
-
-<Section class="bg2 my-5" id="info">
-  <div class="row col-9 justify-content-center mx-auto py-5 align-content-center " style="height: 100%;">
-    <h1 class="main_h">О компании TourCheb</h1>
-    <p class="text-p" style="margin-top: 60px; ">Ранее существовавшая компания по тур агентствам была развалена из-за событий 2019-2021-ых годов, а именно COVID-19. Коллектив этой компании не смирился с таким проигрышем и на протяжении нескольких лет они размышляли, как можно возобновить ход экскурсий и экспедиций. Так, в 2024 они решаются пустить в глобальную огласку о создании абсолютно новой компании TourCheb. TourCheb — это туристическая компания, которая основывается на экспедициях по городу Чебоксары и близлежащих областей республики Чувашии. Компания проводит экскурсии разных видов, как в городе, так и на открытой природе. На экскурсиях, у вас имеется шанс узнать о культурном наследии Чувашской республики и самого города Чебоксары. Не упустите столь великолепный шанс узнать о республике Чувашии нечто большее, мы будем рады всем!</p>
-  </div>
-</Section>
-
-<div class="row mx-auto" style="border: 1px solid rgb(107, 103, 103); width: 70%; margin-bottom: 50px;"></div>
-
-<section class="py-5" id="contact">
-  <div class="row col-12 justify-content-center text-center">
-    <h1 class="main_h">Остались вопросы? Смело задавай!</h1>
-    
-    <h2 style="font-size: 1.5rem;"><br>+79871260650
-      <br>maxmedvedev85@gmail.com
-    </h2>
-    <h3 style="font-size: 1.1rem;"><br>Чувашская Республика, г. Чебоксары, Пр. Мира, д.40</h3>
-    <div class="row justify-content-center">
-      <div class="Vk col-1 ico-s">
-        <a href="https://vk.com/hhandsfromass">
-          <img src="img/vk.png" alt="">
-        </a>
-      </div>
-      <div class="WhatsApp col-1 ico-s">
-        <a href="https://wa.me/+79871260650">
-          <img src="img/wa.png" alt="">
-        </a>
-      </div>
-      <div class="Telegram col-1 ico-s">
-        <a href="https://t.me/bayanishee">
-          <img src="img/tg.png" alt="">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<footer class="text-center text-lg-start bg-body-tertiary text-muted footer" id="cont">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="margin-top: -40px; ">
-    <!-- Left -->
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-6 col-md-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>О сайте
-          </h6>
-          <p>
-           Сайт был написан в целях ознакомления с темой "Туризм" в родных краях, выделить экскурсии, на которые стоит обратить внимание.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-6 col-md-3 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Информация
-          </h6>
-          <p>
-            <a href="#" class="text-reset">Главная</a>
-          </p>
-          <p>
-            <a href="#Services" class="text-reset">Услуги</a>
-          </p>
-          <p>
-            <a href="#info" class="text-reset">О нас</a>
-          </p>
-          <p>
-            <a href="#contact" class="text-reset">Контакты</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-6 col-md-3 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Прочее
-          </h6>
-          <p>
-            <a href="https://vk.com/hhandsfromass" class="text-reset">VKontakte</a>
-          </p>
-          <p>
-            <a href="https://t.me/bayanishee" class="text-reset">Telegram</a>
-          </p>
-          <p>
-            <a href="https://vk.com/nadegdaval" class="text-reset">Преподаватель</a>
-          </p>
-          <p>
-            <a href="https://t.me/bayanishee" class="text-reset">Поддержка</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-6 col-md-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
-          <p><i class="fas fa-home me-3"></i> Чебоксары, Пр. Мира, д.40</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            maxmedvedev85@gmail.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> +7 987 126 06 50</p>
-          <p><i class="fas fa-print me-3"></i> + 7 993 552 06 50</p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024 BY FOR:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ЧЭМK</a>
-  </div>        
-  </header>
-      <script language="JavaScript" type="text/javascript"  src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts"></script>
 </body>
 </html>

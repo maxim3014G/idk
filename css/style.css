@@ -1,198 +1,184 @@
+        /* Базовые сбросы и стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-html {
-    font-size: 20px;
-}
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(145deg, #ffffff 0%, #e9ecf0 100%);
+            background-image: url(../img/6.gif);
+            background-size: 110px 110px;  
+            background-position: -73px 45px;        
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 16px;
+        }
 
+        /* Основной контейнер для центрирования */
+        .center-wrapper {
+            width: 100%;
+            max-width: 600px;
+            min-height: 400px;            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+            border-radius: 48px;
+            padding: 32px 20px;
+            background: linear-gradient(135deg, rgb(245, 238, 238),rgb(226, 224, 224));
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow-y: auto;
+        }
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
+        /* Общий стиль секций */
+        .section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            transition: opacity 0.3s ease;
+        }
 
-p {
-    font-family: "Open Sans", sans-serif;
-}
+        /* Скрываем секции */
+        .hidden {
+            display: none;
+        }
 
-h1, h2 {
-    text-align: center;
-    font-family: "Playfair Display", serif;
-}
-
-
-.bg2 {
-    color: white;
-    background-image: url(../img/bg2.png);
-    height: 700px;
-}
-
-
-.fs_h {
-    text-align: center;  
-    color: white;
-    font-size: 1.2rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    
-}
-
-.fs_mh {
-    font-size: 2.8rem;
-}
-
-.sticky {
-    background-color: #ffffff;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding-top: 10px;
-    z-index: 9;
-}
-
-.astra a {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.first_list {
-    background: url("../img/221.png") no-repeat center center fixed;
-    height: 100vh;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;     
-}
+        .background_img_1 {
+            
+            background-image: url(../img/5.gif);
+        }
 
 
-.all_nav {
-    background-color: white;   
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgb(124, 122, 122);
-}
+        /* Стили кнопок (общие) */
+        button {
+            background: linear-gradient(135deg, rgb(253, 253, 253),rgb(255, 239, 239));
+            border: none;
+            padding: 7px 16px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1d2a37;
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.15s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            min-width: 120px;
+            letter-spacing: 0.3px;
+        }
 
-.menu {
-    font-size: 1.15rem;
-}
+        .un_button {
+            background: linear-gradient(135deg, rgb(245, 238, 238),rgb(226, 224, 224));
+            border: none;
+            padding: 0;
+            box-shadow: none;
+            width: 100%;
+        }
 
-.line {
-    border-bottom: 2px solid rgb(97, 94, 94);
-    width: 50%;
-}
+        button:active {
+            transform: scale(0.96);
+            background: #f0f3f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-.main_h h1 {
-    font-size: 2rem;
-    text-align: center;
-}
+        /* Группа кнопок Да/Нет */
+        .button-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      
+        /* Контейнер для видео */
+        .video-container {
+            width: 100%;
+            max-width: 460px;
+            border-radius: 32px;
+            overflow: hidden;
+            background: black;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
 
-.text h1 {
-    font-size: 1.25rem;
-    text-align: justify;
-}
+        /* Видео на всю ширину, чтобы можно было открыть на весь экран */
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+            background: #0f1a24;
+        }
 
-.text {
-    font-size: 1.15rem;
-    text-indent: 40px;
-}
+        /* Текст на кнопке "начала" */
+        .start-button-text {
+            font-size: 1.4rem;
+            padding: 16px 40px;
+            color: white;
+        }
 
-.text p {
-    font-size: 1.15rem;
-    text-indent: 40px;
+        /* Доп. текст */
+        .hint {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }        
 
-}
+        #start-button {
+            background: linear-gradient(135deg, rgb(199, 80, 80),rgb(241, 127, 146));
+        }
 
+        .cont {
+            padding: 0;
+            text-align: center;   
+                 
+        }
 
-.card {
-    height: 100%;
-    min-height: 430px;
-    max-width: 400px;
-    max-height: 600px;
-    
-}
+        .cont p {            
+            font-style:oblique;     
+            text-align: justify;   
+            text-indent: 10px; 
+            padding-left: 8px;   
+            padding-right: 8px; 
+        }
 
-
-.card img {
-    min-width: 10vw;
-    min-height: 225px;
-
-}
-
-.text_card h1 {
-    font-size: 1.05rem;
-}
-
-.text_card p {
-    font-size: 0.8rem;
-}
-
-.text_button button {
-    font-size: 0.85rem;
-    border: 1px solid rgb(177, 171, 171);
-}
-
-.ico-s {
-    width: 60px;
-}
-
-.ico-s img {
-    height: 50px;
-}
-.footer {
-    font-size: 0.9rem;
-    
-}
-
-
-@media screen and ((min-width: 0px) and (max-width: 576px)) {
-    html {
-        font-size: 13.5px;
-    }
-    .ico-s img {
-        height: 30px;
-    }
-    .ico-s {
-        width: 40px;
-    }
-
-
-}
-
-@media screen and ((min-width: 576px) and (max-width: 768px)) {
-    html {
-        font-size: 14px;
-    } 
-    .text, .text p {
-        font-size: 0.78rem;
-    }
-    .ico-s img {
-        height: 40px;
-    }
-    .ico-s {
-        width: 50px;
-    }
-}
-
-@media screen and ((min-width: 768px) and (max-width: 992px)) {
-    html {
-        font-size: 16px;
-    } 
-    .text, .text p {
-        font-size: 0.85rem;
-    }
-    .ico-s img {
-        height: 40px;
-    }
-    .ico-s {
-        width: 50px;
-    }
-
-}
-
-@media screen and ((min-width: 992px) and (max-width: 1200px)) {
-    .text p, .text {
-        font-size: 0.9rem;
-    }
-    
-
-}
+        .imga {
+            width: 250px;          
+            border-radius: 18px; 
+            overflow: hidden;
+        }
 
 
+        
+        @media (max-width: 400px) {
+          .imga {
+            width: 350px;
+          }
+
+           .center-wrapper {
+            padding: 10px;
+            max-width: 380px;
+            width: 100%;
+            border-radius: 15px;
+           }
+
+            body{
+            background-size: 110px 110px;  
+            background-position: -45px 25px;  
+         }
+        }
+
+         @media (max-width: 560px) {
+          #img_1 {
+            display: none;
+          }
+
+          
+        }
