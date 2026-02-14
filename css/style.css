@@ -1,0 +1,184 @@
+        /* Базовые сбросы и стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(145deg, #ffffff 0%, #e9ecf0 100%);
+            background-image: url(../img/6.gif);
+            background-size: 110px 110px;  
+            background-position: -73px 45px;        
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 16px;
+        }
+
+        /* Основной контейнер для центрирования */
+        .center-wrapper {
+            width: 100%;
+            max-width: 600px;
+            min-height: 400px;            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+            border-radius: 48px;
+            padding: 32px 20px;
+            background: linear-gradient(135deg, rgb(245, 238, 238),rgb(226, 224, 224));
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow-y: auto;
+        }
+
+        /* Общий стиль секций */
+        .section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Скрываем секции */
+        .hidden {
+            display: none;
+        }
+
+        .background_img_1 {
+            
+            background-image: url(../img/5.gif);
+        }
+
+
+        /* Стили кнопок (общие) */
+        button {
+            background: linear-gradient(135deg, rgb(253, 253, 253),rgb(255, 239, 239));
+            border: none;
+            padding: 7px 16px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1d2a37;
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.15s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            min-width: 120px;
+            letter-spacing: 0.3px;
+        }
+
+        .un_button {
+            background: linear-gradient(135deg, rgb(245, 238, 238),rgb(226, 224, 224));
+            border: none;
+            padding: 0;
+            box-shadow: none;
+            width: 100%;
+        }
+
+        button:active {
+            transform: scale(0.96);
+            background: #f0f3f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Группа кнопок Да/Нет */
+        .button-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      
+        /* Контейнер для видео */
+        .video-container {
+            width: 100%;
+            max-width: 460px;
+            border-radius: 32px;
+            overflow: hidden;
+            background: black;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Видео на всю ширину, чтобы можно было открыть на весь экран */
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+            background: #0f1a24;
+        }
+
+        /* Текст на кнопке "начала" */
+        .start-button-text {
+            font-size: 1.4rem;
+            padding: 16px 40px;
+            color: white;
+        }
+
+        /* Доп. текст */
+        .hint {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }        
+
+        #start-button {
+            background: linear-gradient(135deg, rgb(199, 80, 80),rgb(241, 127, 146));
+        }
+
+        .cont {
+            padding: 0;
+            text-align: center;   
+                 
+        }
+
+        .cont p {            
+            font-style:oblique;     
+            text-align: justify;   
+            text-indent: 10px; 
+            padding-left: 8px;   
+            padding-right: 8px; 
+        }
+
+        .imga {
+            width: 250px;          
+            border-radius: 18px; 
+            overflow: hidden;
+        }
+
+
+        
+        @media (max-width: 400px) {
+          .imga {
+            width: 350px;
+          }
+
+           .center-wrapper {
+            padding: 10px;
+            max-width: 380px;
+            width: 100%;
+            border-radius: 15px;
+           }
+
+            body{
+            background-size: 110px 110px;  
+            background-position: -45px 25px;  
+         }
+        }
+
+         @media (max-width: 560px) {
+          #img_1 {
+            display: none;
+          }
+
+          
+        }
